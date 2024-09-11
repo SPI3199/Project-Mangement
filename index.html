@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Projects</h2>
+        <ul id="project-list"></ul>
+        <button class="button" id="add-project-btn">Add New Project</button>
+        <div id="project-form" class="hidden">
+          <input type="text" id="project-name" />
+          <button class="button add-button" id="save-project-btn">
+            Add Project
+          </button>
+        </div>
+      </aside>
+      <main class="main-content">
+        <h2 id="project-title">All Todos</h2>
+        <div id="project-details" class="hidden">
+          <h2 id="project-title"></h2>
+          <div id="todo-list"></div>
+        </div>
+        <button class="button" id="add-todo-btn">Add New Todo</button>
+        <div id="todo-form" class="hidden">
+          <div>Title</div>
+
+          <input type="text" id="todo-title" />
+          <div>Description</div>
+          <input type="textarea" id="todo-desc" />
+          <div>Priority</div>
+          <select type="select" id="todo-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <div>Due Date</div>
+          <input type="date" id="todo-date" />
+          <div>
+            <button class="button add-todo-button" id="save-todo-btn">
+              Add Todo
+            </button>
+          </div>
+        </div>
+
+        <div id="edit-form" class="hidden">
+          <h4>Edit Todo</h4>
+          <div>Title</div>
+
+          <input type="text" id="edit-title" />
+          <div>Description</div>
+          <input type="textarea" id="edit-desc" />
+          <div>Priority</div>
+          <select type="select" id="edit-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+          <div>Due Date</div>
+          <input type="date" id="edit-date" />
+          <div>
+            <button class="button add-todo-button" id="save-edit-btn">
+              Save
+            </button>
+            <div>
+              <button class="button" id="save-todo-btn">Add Todo</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
